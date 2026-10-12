@@ -20,8 +20,8 @@ public class Curvas extends JPanel {
 
         // Puntos de control
         Point2D p0 = new Point2D.Double(50, 250);   // Inicio
-        Point2D p1 = new Point2D.Double(100, 50);   // Control 1
-        Point2D p2 = new Point2D.Double(400, 400);  // Control 2
+        Point2D p1 = new Point2D.Double(350, 250);   // Control 1
+        Point2D p2 = new Point2D.Double(250, 250);  // Control 2
         Point2D p3 = new Point2D.Double(450, 250);  // Fin
 
         // Dibujar líneas guía entre puntos de control
@@ -52,6 +52,8 @@ public class Curvas extends JPanel {
         g2.setStroke(new BasicStroke(2));
         g2.draw(curva);
     }
+    
+    
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Curva Bézier Cúbica");
